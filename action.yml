@@ -1,4 +1,3 @@
-
 name: Action for release
 description: Action for release
 
@@ -6,10 +5,19 @@ inputs:
   githubToken:
     description: GitHub token
     required: true
+
   mode:
     description: Increment mode
     required: false
+
   flags:
     description: Custom flags
     required: false
     default: ''
+
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        echo "Release action works"
