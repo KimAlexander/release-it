@@ -4,8 +4,8 @@ description: Setup git
 inputs:
   name:
     description: user name
-    required: false
-    default: bot
+    required: true
+    default: ''
   email:
     description: user email
     required: false
