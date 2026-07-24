@@ -23,6 +23,9 @@ outputs:
 runs:
   using: composite
   steps:
+    - uses: KimAlexander/release-it/setup-git@main
+      with:
+        token: ${{ inputs.githubToken }}
     - shell: bash
       id: output
       run: |
