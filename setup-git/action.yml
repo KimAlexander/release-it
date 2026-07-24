@@ -5,7 +5,7 @@ inputs:
   name:
     description: user name
     required: true
-    default: 'bot'
+    default: 'github-actions[bot]'
   email:
     description: user email
     required: false
