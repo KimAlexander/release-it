@@ -5,11 +5,11 @@ inputs:
   name:
     description: user name
     required: true
-    default: ''
+    default: 'bot'
   email:
     description: user email
     required: false
-    default: ''
+    default: 41898282+github-actions[bot]@users.noreply.github.com
   token:
     description: Token
     required: true
