@@ -26,7 +26,7 @@ runs:
     - uses: KimAlexander/release-it/setup-git@main
       with:
         token: ${{ inputs.githubToken }}
-        username: ${{ github.actor }}
+        name: ${{ github.actor }}
     - shell: bash
       id: output
       run: |
