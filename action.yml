@@ -13,11 +13,17 @@ inputs:
   flags:
     description: Custom flags
     required: false
-    default: ''
+    default: ""
+
+outputs:
+  released:
+    description: was the version updated
+    value: ${{ steps.output.outputs.released }}
 
 runs:
   using: composite
   steps:
     - shell: bash
+      id: output
       run: |
-        echo "Release action works"
+        npx release-it ${{ inputs.mode }} --ci ${{ inputs.flags }}
