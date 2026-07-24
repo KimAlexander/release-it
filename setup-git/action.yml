@@ -4,7 +4,7 @@ description: Setup git
 inputs:
   name:
     description: user name
-    required: true
+    required: false
     default: 'github-actions[bot]'
   email:
     description: user email
