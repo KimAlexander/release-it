@@ -1,0 +1,15 @@
+{
+  "name": "@kimalexander/syncer",
+  "version": "0.0.1",
+  "description": "CLI tool for sync version in npm workspaces",
+  "main": "./bin/src/index.js",
+  "bin": {
+    "syncer": "./bin/src/index.js"
+  },
+  "dependencies": {
+    "glob": "13.0.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

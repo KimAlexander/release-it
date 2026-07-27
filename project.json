@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/nx/schemas/project-schema.json",
+  "name": "toolkit",
+  "projectType": "library",
+  "sourceRoot": ".",
+  "targets": {
+    "publish": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["cp ./LICENSE ./README.md ./dist", "npm publish ./dist --ignore-scripts"],
+        "parallel": false
+      }
+    }
+  }
+}

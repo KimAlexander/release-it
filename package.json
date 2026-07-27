@@ -1,0 +1,22 @@
+{
+  "name": "actions-plugins",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "nx build toolkit",
+    "release": "npx syncer && npx nx publish toolkit"
+  },
+  "devDependencies": {
+    "nx": "^21.0.0",
+    "release-it": "^18.0.0"
+  },
+  "syncer": {
+    "includePaths": [
+      "./projects",
+      "./package-lock.json"
+    ],
+    "matchPackageNames": [
+      "release-it"
+    ]
+  }
+}
