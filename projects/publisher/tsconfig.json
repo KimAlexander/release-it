@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "types": ["node"],
+    "baseUrl": ".",
+    "rootDir": ".",
+    "allowImportingTsExtensions": false,
+    "module": "commonjs",
+    "outDir": "bin"
+  },
+  "include": ["src/*.ts"]
+}
