@@ -30,7 +30,7 @@ jobs:
             echo "PAT_FOR_BOT is available"
           fi
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: KimAlexander/release-it@main # main
+      - uses: KimAlexander/projects/release-it@main # main
         with:
           mode: ${{ github.event.inputs.mode || 'minor' }}
           githubToken: ${{ secrets.PAT_FOR_BOT }}
