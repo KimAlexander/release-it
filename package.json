@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "nx build toolkit",
-    "release": "npx nx run-many --target publish --all"
+    "release": "npx syncer && npx nx run-many -t publish"
   },
   "devDependencies": {
     "nx": "^21.0.0",
