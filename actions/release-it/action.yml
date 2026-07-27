@@ -30,7 +30,7 @@ runs:
         persist-credentials: false
         fetch-tags: true
         fetch-depth: 0
-    - uses: KimAlexander/release-it/setup-git@main
+    - uses: KimAlexander/release-it/projects/setup-git@main
       with:
         token: ${{ inputs.githubToken }}
     - shell: bash
