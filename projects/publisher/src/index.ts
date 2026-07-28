@@ -58,9 +58,9 @@ const path = getValueByFlag<string>(`--path`, ``);
         `git push origin --tags --force`
     );
 
-    execute(
-        `gh pr create --base build/${branchName} --head build/${branchName}-${version} --title "New build ${packageJson.name}@${version}" --body "New build ${packageJson.name}@${version}"`
-    );
+    // execute(
+    //     `gh pr create --base build/${branchName} --head build/${branchName}-${version} --title "New build ${packageJson.name}@${version}" --body "New build ${packageJson.name}@${version}"`
+    // );
 
     execute(
         `git checkout main`

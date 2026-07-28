@@ -21,7 +21,7 @@
       ],
       "executor": "nx:run-commands",
       "options": {
-        "command": "node projects/publisher/bin/src/index.js"
+        "command": "npx ts-node projects/publisher/src/index.ts"
       }
     }
   }
