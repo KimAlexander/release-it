@@ -38,7 +38,7 @@ const binPath = getValueByFlag<string>(`--binPath`, ``);
 
     cleanDirectory('.', { excludePaths: ['node_modules', 'dist', '.angular', '.nx', '.git', '.gitignore'] });
 
-    await cp(binPath, ".", {
+    await cp(path, ".", {
         recursive: true,
         force: true,
     });
