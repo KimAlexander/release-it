@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "glob": "13.0.6"
-  }
+  },
+  "types": "./src/index.d.ts",
+  "module": "./src/index.js",
+  "type": "module"
 }

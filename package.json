@@ -1,38 +1,15 @@
 {
-  "name": "actions-plugins",
-  "version": "0.8.0",
-  "private": true,
-  "workspaces": [
-    "projects/*"
-  ],
-  "scripts": {
-    "build": "nx build toolkit",
-    "release": "npx nx publish syncer",
-    "build:syncer": "npx syncer && npx nx build syncer"
-  },
-  "devDependencies": {
-    "@taiga-ui/syncer": "^0.554.0",
-    "@types/node": "^26.1.2",
-    "nx": "23.0.1",
-    "@nx/js": "23.0.0",
-    "release-it": "^21.0.0",
-    "typescript": "6.0.3"
-  },
-  "syncer": {
-    "includePaths": [
-      "./projects",
-      "./package-lock.json"
-    ],
-    "matchPackageNames": [
-      "syncer",
-      "publisher",
-      "release-it-config"
-    ]
-  },
-  "release-it": {
-    "extends": "./projects/release-it-config/.release-it.js"
+  "name": "syncer",
+  "version": "0.0.1",
+  "description": "CLI tool for sync version in npm workspaces",
+  "main": "./bin/src/index.js",
+  "bin": {
+    "syncer": "./bin/src/index.js"
   },
   "dependencies": {
-    "glob": "^13.0.6"
-  }
+    "glob": "13.0.6"
+  },
+  "types": "./src/index.d.ts",
+  "module": "./src/index.js",
+  "type": "module"
 }
