@@ -5,11 +5,11 @@ import { makeNewBuildBranch } from './shared/make-new-build-branch';
 import { cleanDirectory } from './shared/clean-directory';
 import { deleteIfBranchAlreadyExists } from './shared/delete-if-branch-already-exists';
 
-function delay(milliseconds: number): Promise<void> {
-    return new Promise((resolve) => {
-        setTimeout(resolve, milliseconds);
-    });
-}
+// function delay(milliseconds: number): Promise<void> {
+//     return new Promise((resolve) => {
+//         setTimeout(resolve, milliseconds);
+//     });
+// }
 
 const path = getValueByFlag<string>(`--path`, ``);
 
@@ -65,8 +65,6 @@ const path = getValueByFlag<string>(`--path`, ``);
     execute(
         `git checkout main`
     );
-
-    await delay(2000);
 
     console.info(`${packageJson.name}@${version} is published successfully`);
 })();
