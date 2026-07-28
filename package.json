@@ -24,5 +24,8 @@
     "matchPackageNames": [
       "release-it"
     ]
+  },
+  "release-it": {
+    "extends": "./projects/release-it-config/.release-it.js"
   }
 }
