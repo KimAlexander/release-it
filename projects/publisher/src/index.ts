@@ -1,4 +1,5 @@
 import { resolve } from 'path';
+import { cp } from 'fs/promises';
 import { execute } from './shared/execute';
 import { getValueByFlag } from './shared/argv.utils';
 import { makeNewBuildBranch } from './shared/make-new-build-branch';
@@ -34,9 +35,10 @@ const path = getValueByFlag<string>(`--path`, ``);
 
     cleanDirectory('.', { excludePaths: ['node_modules', 'dist', '.angular', '.nx', '.git', '.gitignore'] });
 
-    execute(
-        `cp -r ${path}/* ./`
-    );
+    await cp(path, ".", {
+        recursive: true,
+        force: true,
+    });
 
     execute(
         `git add .`
