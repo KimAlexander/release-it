@@ -1,6 +1,6 @@
 {
   "name": "syncer",
-  "version": "0.0.1",
+  "version": "0.8.1",
   "description": "CLI tool for sync version in npm workspaces",
   "main": "./bin/src/index.js",
   "bin": {
@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "glob": "13.0.6"
-  }
+  },
+  "types": "./src/index.d.ts",
+  "module": "./src/index.js",
+  "type": "module"
 }
