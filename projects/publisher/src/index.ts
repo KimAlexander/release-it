@@ -13,6 +13,7 @@ import { deleteIfBranchAlreadyExists } from './shared/delete-if-branch-already-e
 // }
 
 const path = getValueByFlag<string>(`--path`, ``);
+const binPath = getValueByFlag<string>(`--binPath`, ``);
 
 (async function main(): Promise<void> {
     const packageJson = await import(resolve(path, `package.json`));
@@ -22,6 +23,8 @@ const path = getValueByFlag<string>(`--path`, ``);
     );
     const branchName = packageJson.name.split('/').pop();
     const customTag = `${packageJson.name}-v${version}`;
+
+    console.info(`Publishing ${packageJson.name}@${version}...`);
 
     await deleteIfBranchAlreadyExists({
         branchName,
@@ -35,7 +38,7 @@ const path = getValueByFlag<string>(`--path`, ``);
 
     cleanDirectory('.', { excludePaths: ['node_modules', 'dist', '.angular', '.nx', '.git', '.gitignore'] });
 
-    await cp(path, ".", {
+    await cp(binPath, ".", {
         recursive: true,
         force: true,
     });
