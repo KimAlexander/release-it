@@ -21,7 +21,7 @@
       ],
       "executor": "nx:run-commands",
       "options": {
-        "command": "node --v"
+        "command": "npx node -v"
       }
     }
   }
