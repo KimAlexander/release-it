@@ -1,4 +1,4 @@
-import { execute } from './shared/execute';
+import { execute } from './execute';
 
 export function cleanDirectory(cleanPath: string, options?: { excludePaths: string[] }) {
     const excludedPaths = options?.excludePaths || [];

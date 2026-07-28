@@ -21,7 +21,7 @@
       ],
       "executor": "nx:run-commands",
       "options": {
-       "command": "echo 'PUBLISH TARGET EXECUTED' && exit 1"
+        "command": "node projects/publisher/bin/src/index.js"
       }
     }
   }
