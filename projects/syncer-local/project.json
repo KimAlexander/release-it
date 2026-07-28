@@ -9,7 +9,7 @@
       "options": {
         "command": "tsc --project ./projects/syncer-local/tsconfig.json"
       },
-      "outputs": ["{projectRoot}/projects/syncer-local"]
+      "outputs": ["{projectRoot}/bin"]
     },
     "publish": {
       "dependsOn": [
