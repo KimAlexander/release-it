@@ -7,9 +7,10 @@ module.exports = {
     pushArgs: ["--follow-tags"],
     requireBranch: false,
     requireCleanWorkingDir: false,
-    requireCommits: true,
+    requireCommits: false,
     getLatestTagFromAllRefs: true,
     push: true,
+    commit: true,
   },
 
   hooks: {
