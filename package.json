@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "build": "nx build toolkit",
-    "release": "npx syncer &&npx nx publish syncer",
+    "release": "npx nx publish syncer",
     "build:syncer": "npx syncer && npx nx build syncer"
   },
   "devDependencies": {
