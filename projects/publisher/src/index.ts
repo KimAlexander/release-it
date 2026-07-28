@@ -36,7 +36,7 @@ const binPath = getValueByFlag<string>(`--binPath`, ``);
         version
     });
 
-    cleanDirectory('.', { excludePaths: ['node_modules', 'dist', 'bin', '.angular', '.nx', '.git', '.gitignore'] });
+    cleanDirectory('.', { excludePaths: ['node_modules', 'dist', '.angular', '.nx', '.git', '.gitignore'] });
 
     await cp(binPath, ".", {
         recursive: true,
