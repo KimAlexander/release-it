@@ -32,39 +32,39 @@ const path = getValueByFlag<string>(`--path`, ``);
         version
     });
 
-    cleanDirectory('.', { excludePaths: ['node_modules', 'dist', '.angular', '.nx', '.git', '.gitignore'] });
+    // cleanDirectory('.', { excludePaths: ['node_modules', 'dist', '.angular', '.nx', '.git', '.gitignore'] });
 
-    execute(
-        `cp -r ${path}/* ./`
-    );
+    // execute(
+    //     `cp -r ${path}/* ./`
+    // );
 
-    execute(
-        `git add .`
-    );
+    // execute(
+    //     `git add .`
+    // );
 
-    execute(
-        `git commit -m "New version ${customTag}"`
-    );
+    // execute(
+    //     `git commit -m "New version ${customTag}"`
+    // );
 
-    execute(
-        `git tag ${customTag}`
-    );
+    // execute(
+    //     `git tag ${customTag}`
+    // );
 
-    execute(
-        `git push -u origin build/${branchName}-${version} --force`
-    );
+    // execute(
+    //     `git push -u origin build/${branchName}-${version} --force`
+    // );
 
-    execute(
-        `git push origin --tags --force`
-    );
+    // execute(
+    //     `git push origin --tags --force`
+    // );
 
     // execute(
     //     `gh pr create --base build/${branchName} --head build/${branchName}-${version} --title "New build ${packageJson.name}@${version}" --body "New build ${packageJson.name}@${version}"`
     // );
 
-    execute(
-        `git checkout main`
-    );
+    // execute(
+    //     `git checkout main`
+    // );
 
     console.info(`${packageJson.name}@${version} is published successfully`);
 })();
