@@ -1,6 +1,6 @@
 {
   "name": "actions-plugins",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "workspaces": [
     "projects/*"
@@ -13,7 +13,7 @@
     "@taiga-ui/syncer": "^0.554.0",
     "@types/node": "^26.1.2",
     "nx": "23.0.1",
-    "release-it": "^18.0.0",
+    "release-it": "^20.2.0",
     "typescript": "5.8.3"
   },
   "syncer": {
