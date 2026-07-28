@@ -21,7 +21,7 @@
       ],
       "executor": "nx:run-commands",
       "options": {
-       "command": "echo Node: $(node -v)"
+       "command": "echo 'PUBLISH TARGET EXECUTED' && exit 1"
       }
     }
   }
