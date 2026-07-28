@@ -22,15 +22,15 @@ const path = getValueByFlag<string>(`--path`, ``);
     const branchName = packageJson.name.split('/').pop();
     const customTag = `${packageJson.name}-v${version}`;
 
-    await deleteIfBranchAlreadyExists({
-        branchName,
-        version
-    })
+    // await deleteIfBranchAlreadyExists({
+    //     branchName,
+    //     version
+    // })
 
-    await makeNewBuildBranch({
-        branchName,
-        version
-    });
+    // await makeNewBuildBranch({
+    //     branchName,
+    //     version
+    // });
 
     // cleanDirectory('.', { excludePaths: ['node_modules', 'dist', '.angular', '.nx', '.git', '.gitignore'] });
 
