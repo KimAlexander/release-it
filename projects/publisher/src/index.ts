@@ -32,7 +32,7 @@ const path = getValueByFlag<string>(`--path`, ``);
         version
     });
 
-    cleanDirectory('.', { excludePaths: ['node_modules', 'dist', '.angular', '.nx', '.git', '.gitignore'] });
+    // cleanDirectory('.', { excludePaths: ['node_modules', 'dist', '.angular', '.nx', '.git', '.gitignore'] });
 
     execute(
         `cp -r ${path}/* ./`
