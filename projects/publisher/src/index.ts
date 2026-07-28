@@ -13,7 +13,6 @@ import { deleteIfBranchAlreadyExists } from './shared/delete-if-branch-already-e
 // }
 
 const path = getValueByFlag<string>(`--path`, ``);
-const binPath = getValueByFlag<string>(`--binPath`, ``);
 
 (async function main(): Promise<void> {
     const packageJson = await import(resolve(path, `package.json`));
