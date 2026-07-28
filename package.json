@@ -2,6 +2,9 @@
   "name": "actions-plugins",
   "version": "0.0.1",
   "private": true,
+  "workspaces": [
+    "projects/*"
+  ],
   "scripts": {
     "build": "nx build toolkit",
     "release": "npx syncer"
