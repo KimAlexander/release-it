@@ -46,17 +46,17 @@ const path = getValueByFlag<string>(`--path`, ``);
         `git commit -m "New version ${customTag}"`
     );
 
-    execute(
-        `git tag ${customTag}`
-    );
+    // execute(
+    //     `git tag ${customTag}`
+    // );
 
     execute(
         `git push -u origin build/${branchName}-${version} --force`
     );
 
-    execute(
-        `git push origin --tags --force`
-    );
+    // execute(
+    //     `git push origin --tags --force`
+    // );
 
     // execute(
     //     `gh pr create --base build/${branchName} --head build/${branchName}-${version} --title "New build ${packageJson.name}@${version}" --body "New build ${packageJson.name}@${version}"`
