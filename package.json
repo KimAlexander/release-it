@@ -24,8 +24,9 @@
       "./package-lock.json"
     ],
     "matchPackageNames": [
-      "actions-plugins",
-      "syncer"
+      "syncer",
+      "publisher",
+      "release-it-config"
     ]
   },
   "release-it": {
