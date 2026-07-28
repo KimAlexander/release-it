@@ -35,9 +35,7 @@ jobs:
         with:
           mode: ${{ github.event.inputs.mode || 'minor' }}
           githubToken: ${{ secrets.PAT_FOR_BOT }}
-          
-          - name: Log release outputs
-
+      - name: Log release outputs
         run: |
           echo "Released: ${{ steps.release-it.outputs.released }}"
           echo "Version: v${{ steps.info.outputs.version }}"
