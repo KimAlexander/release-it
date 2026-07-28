@@ -1,6 +1,7 @@
 {
     "compileOnSave": false,
     "compilerOptions": {
+        "ignoreDeprecations": "6.0",
         "declaration": false,
         "moduleResolution": "bundler",
         "experimentalDecorators": true,
