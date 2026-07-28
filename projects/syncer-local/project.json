@@ -2,14 +2,14 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "syncer",
   "projectType": "library",
-  "sourceRoot": "projects/syncer",
+  "sourceRoot": "projects/syncer-local",
   "targets": {
     "build": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "tsc --project ./projects/syncer/tsconfig.json"
+        "command": "tsc --project ./projects/syncer-local/tsconfig.json"
       },
-      "outputs": ["{projectRoot}/projects/syncer"]
+      "outputs": ["{projectRoot}/projects/syncer-local"]
     },
     "publish": {
       "dependsOn": [
@@ -21,7 +21,7 @@
       ],
       "executor": "nx:run-commands",
       "options": {
-        "command": "node projects/syncer-local/bin/src/index.js"
+        "command": "node projects/publisher/bin/src/index.js"
       }
     }
   }

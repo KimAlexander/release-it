@@ -7,12 +7,14 @@
   ],
   "scripts": {
     "build": "nx build toolkit",
-    "release": "npx syncer && npx nx run-many --target publish --all"
+    "release": "npx syncer && npx nx publish syncer"
   },
   "devDependencies": {
     "@taiga-ui/syncer": "^0.554.0",
-    "nx": "^21.0.0",
-    "release-it": "^18.0.0"
+    "@types/node": "^26.1.2",
+    "nx": "23.0.1",
+    "release-it": "^18.0.0",
+    "typescript": "5.8.3"
   },
   "syncer": {
     "includePaths": [

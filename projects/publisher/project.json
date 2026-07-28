@@ -21,7 +21,7 @@
       ],
       "executor": "nx:run-commands",
       "options": {
-        "command": "npm publish ./projects/publisher --access=public --ignore-scripts"
+        "command": "npm --v"
       }
     }
   }

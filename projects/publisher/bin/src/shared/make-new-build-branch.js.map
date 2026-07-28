@@ -1,0 +1,1 @@
+{"version":3,"file":"make-new-build-branch.js","sourceRoot":"","sources":["../../../src/shared/make-new-build-branch.ts"],"names":[],"mappings":";;AAOA,gDAIC;AAXD,uCAAoC;AAOpC,SAAgB,kBAAkB,CAAC,OAA0B;IAC3D,MAAM,EAAE,UAAU,EAAE,OAAO,EAAE,GAAG,OAAO,CAAC;IACxC,MAAM,UAAU,GAAG,SAAS,UAAU,IAAI,OAAO,EAAE,CAAC;IACpD,IAAA,iBAAO,EAAC,mBAAmB,UAAU,EAAE,CAAC,CAAC;AAC3C,CAAC"}
