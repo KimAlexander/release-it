@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "build": "nx build toolkit",
-    "release": "npx syncer"
+    "release": "npx syncer && npx nx run-many --target publish --all"
   },
   "devDependencies": {
     "@taiga-ui/syncer": "^0.554.0",

@@ -21,7 +21,7 @@
       ],
       "executor": "nx:run-commands",
       "options": {
-        "command": "npm publish ./projects/syncer --access=public --ignore-scripts"
+        "command": "node projects/syncer-local/bin/src/index.js"
       }
     }
   }
