@@ -34,9 +34,9 @@ const path = getValueByFlag<string>(`--path`, ``);
 
     // cleanDirectory('.', { excludePaths: ['node_modules', 'dist', '.angular', '.nx', '.git', '.gitignore'] });
 
-    execute(
-        `cp -r ${path}/* ./`
-    );
+    // execute(
+    //     `cp -r ${path}/* ./`
+    // );
 
     execute(
         `git add .`
