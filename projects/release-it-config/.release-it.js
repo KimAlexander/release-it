@@ -16,4 +16,10 @@ module.exports = {
   hooks: {
     "before:release": "npm run release",
   },
+  npm: {
+    allowSameVersion: true,
+    publish: false,
+    skipChecks: true,
+  },
+  verbose: true,
 };
