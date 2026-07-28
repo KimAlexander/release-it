@@ -21,7 +21,7 @@
       ],
       "executor": "nx:run-commands",
       "options": {
-        "command": "npx ts-node projects/publisher/src/index.ts --path=projects/syncer-local --binPath=projects/syncer-local/bin/src"
+        "command": "npx ts-node projects/publisher/src/index.ts --path ./dist/syncer"
       }
     }
   }
