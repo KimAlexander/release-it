@@ -12,9 +12,9 @@ module.exports = {
     tagName: "v${version}",
   },
 
-  // hooks: {
-  //   "before:release": "npm run release",
-  // },
+  hooks: {
+    "after:release": "npm run release",
+  },
   npm: {
     allowSameVersion: true,
     publish: false,
