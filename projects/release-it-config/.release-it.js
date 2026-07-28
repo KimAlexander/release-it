@@ -1,16 +1,15 @@
 module.exports = {
   git: {
-    commitMessage: "chore(release): v${version}",
-    tagAnnotation: "Release v${version}",
-    tagName: "v${version}",
+    addUntrackedFiles: true,
     commitArgs: "--no-verify",
+    commitMessage: "chore(release): v${version}",
+    getLatestTagFromAllRefs: true,
     pushArgs: ["--follow-tags"],
     requireBranch: false,
     requireCleanWorkingDir: false,
     requireCommits: false,
-    getLatestTagFromAllRefs: true,
-    push: true,
-    commit: true,
+    tagAnnotation: "Release v${version}",
+    tagName: "v${version}",
   },
 
   hooks: {
