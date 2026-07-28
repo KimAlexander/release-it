@@ -1,5 +1,5 @@
 {
-  "name": "@kimalexander/syncer",
+  "name": "syncer",
   "version": "0.0.1",
   "description": "CLI tool for sync version in npm workspaces",
   "main": "./bin/src/index.js",
