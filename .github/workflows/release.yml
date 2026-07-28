@@ -37,7 +37,6 @@ jobs:
           githubToken: ${{ secrets.PAT_FOR_BOT }}
       - name: Log release outputs
         run: |
-          echo "Released: ${{ steps.release-it.outputs.released }}"
           echo "Version: v${{ steps.info.outputs.version }}"
           echo "Name: ${{ steps.info.outputs.name }}"
 
