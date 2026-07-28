@@ -1,11 +1,21 @@
 {
-    "extends": "../../tsconfig.json",
     "compilerOptions": {
-        "baseUrl": ".",
-        "rootDir": ".",
-        "allowImportingTsExtensions": false,
-        "module": "commonjs",
-        "outDir": "bin"
+        "target": "es2022",
+        "useDefineForClassFields": false,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true
     },
-    "include": ["src/*.ts"]
+    "files": [],
+    "include": [],
+    "extends": "../../tsconfig.json",
+    "angularCompilerOptions": {
+        "enableI18nLegacyMessageIdFormat": false,
+        "strictInjectionParameters": true,
+        "strictInputAccessModifiers": true,
+        "strictTemplates": true
+    }
 }

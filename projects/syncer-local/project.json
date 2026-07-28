@@ -5,10 +5,15 @@
   "sourceRoot": "projects/syncer-local",
   "targets": {
     "build": {
-      "executor": "nx:run-commands",
+      "executor": "@nx/js:tsc",
       "options": {
-        "command": "tsc --project ./projects/syncer-local/tsconfig.json"
+        "outputPath": "dist/syncer",
+        "main": "projects/syncer-local/src/index.ts",
+        "tsConfig": "projects/syncer-local/tsconfig.lib.json",
+        "assets": ["projects/syncer-local/*.md"],
+        "generatePackageJson": true
       },
+
       "outputs": ["{workspaceRoot}/dist/syncer"]
     },
     "publish": {
