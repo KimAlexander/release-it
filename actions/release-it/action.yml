@@ -33,6 +33,12 @@ runs:
     - uses: KimAlexander/release-it/projects/setup-git@main
       with:
         token: ${{ inputs.githubToken }}
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: npm
+    - shell: bash
+      run: npm ci
     - shell: bash
       id: output
       run: |
